@@ -1,5 +1,5 @@
 require 'sinatra'
-require 'datamapper'
+require 'data_mapper'
 
 get '/' do
 	@notes = Note.all :order => :id.desc
